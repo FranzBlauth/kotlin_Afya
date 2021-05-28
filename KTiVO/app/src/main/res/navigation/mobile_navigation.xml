@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_last_temp">
+
+    <fragment
+        android:id="@+id/nav_last_temp"
+        android:name="com.wolppi.ktivo.ui.lastTemp.LastTempFragment"
+        android:label="@string/temperatura"
+        tools:layout="@layout/fragment_lasttemp" />
+
+    <fragment
+        android:id="@+id/nav_Operation"
+        android:name="com.wolppi.ktivo.ui.Operation.OperationFragment"
+        android:label="@string/operacoes"
+        tools:layout="@layout/fragment_operation" />
+
+    <fragment
+        android:id="@+id/nav_Configuration"
+        android:name="com.wolppi.ktivo.ui.information.InformationFragment"
+        android:label="@string/configuracoes"
+        tools:layout="@layout/fragment_information" />
+
+    <fragment
+        android:id="@+id/nav_Register"
+        android:name="com.wolppi.ktivo.ui.register.MenuRegisterFragment"
+        android:label="@string/cadastros"
+        tools:layout="@layout/fragment_register" />
+</navigation>

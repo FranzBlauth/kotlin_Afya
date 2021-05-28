@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.MySwitchCompat"
+    tools:context=".viewArea.AreaFormActivity">
+
+    <TextView
+        android:id="@+id/title_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="08dp"
+        android:layout_marginTop="16dp"
+        android:text="Nome da Área"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_area"
+        android:theme="@style/ThemeOverlay.MyEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="08dp"
+        android:layout_marginTop="8dp"
+        android:text="name_area_data"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_area" />
+
+    <!--    <View-->
+    <!--        android:id="@+id/view_area"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_marginTop="0dp"-->
+    <!--        android:layout_marginLeft="08dp"-->
+    <!--        android:layout_marginRight="08dp"-->
+    <!--        android:background="#9C9B9B"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/name_area"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"/>-->
+
+    <TextView
+        android:id="@+id/title_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="08dp"
+        android:layout_marginTop="16dp"
+        android:text="Responsável"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_area" />
+
+    <Spinner
+        android:id="@+id/spinner_contacts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="08dp"
+        android:layout_marginRight="08dp"
+        android:backgroundTint="#c1c1c1"
+        android:ellipsize="marquee"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_contact" />
+
+
+    <Switch
+        android:id="@+id/switch_push"
+        android:theme="@style/ThemeOverlay.MySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/notifica"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_contacts"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch_email"
+        android:layout_width="wrap_content"
+        android:theme="@style/ThemeOverlay.MySwitch"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_contacts"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MySwitch"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="SMS"
+        app:layout_constraintLeft_toRightOf="@+id/switch_email"
+        app:layout_constraintTop_toBottomOf="@id/spinner_contacts"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="263dp"
+        android:layout_height="298dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="261dp"
+        tools:src="@tools:sample/avatars"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button_go_area"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttons_backgroud_blue"
+        android:text="@string/prosseguir"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progress_bar"
+        android:minWidth="95dip"
+        android:minHeight="95dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

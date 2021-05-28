@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background"
+    android:padding="32dp"
+    tools:context=".viewLogin.LoginActivity">
+
+    <View
+        android:id="@+id/view_area_01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/ic_area"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="08dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_area_01" />
+
+    <TextView
+        android:id="@+id/text_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Área"
+        android:textAlignment="center"
+        android:textColor="@color/ktivobase"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/ic_area"
+        app:layout_constraintStart_toEndOf="@+id/ic_area"
+        app:layout_constraintTop_toTopOf="@id/ic_area"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/view_area_02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="08dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_area" />
+
+    <View
+        android:id="@+id/view_place_01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintTop_toBottomOf="@id/view_area_02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ic_place"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="08dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/ic_place"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_place_01" />
+
+    <TextView
+        android:id="@+id/text_place"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:inputType="numberDecimal"
+        android:text="Local"
+        android:textAlignment="center"
+        android:textColor="@color/ktivobase"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/ic_place"
+        app:layout_constraintStart_toEndOf="@+id/ic_place"
+        app:layout_constraintTop_toTopOf="@id/ic_place" />
+
+    <View
+        android:id="@+id/view_place_02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="08dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_place" />
+
+    <View
+        android:id="@+id/view_contact_01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintTop_toBottomOf="@id/view_place_02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ic_contact"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="08dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/ic_contacts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_contact_01" />
+
+    <TextView
+        android:id="@+id/text_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:inputType="numberDecimal"
+        android:text="Contato"
+        android:textAlignment="center"
+        android:textColor="@color/ktivobase"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/ic_contact"
+        app:layout_constraintStart_toEndOf="@+id/ic_contact"
+        app:layout_constraintTop_toTopOf="@id/ic_contact" />
+
+    <View
+        android:id="@+id/view_contact_02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="08dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_contact" />
+
+    <View
+        android:id="@+id/view_provider_01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintTop_toBottomOf="@id/view_contact_02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ic_provider"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="08dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/ic_provider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_provider_01" />
+
+    <TextView
+        android:id="@+id/text_provider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:inputType="numberDecimal"
+        android:text="Fornecedor"
+        android:textAlignment="center"
+        android:textColor="@color/ktivobase"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/ic_provider"
+        app:layout_constraintStart_toEndOf="@+id/ic_provider"
+        app:layout_constraintTop_toTopOf="@id/ic_provider" />
+
+    <View
+        android:id="@+id/view_provider_02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="08dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_provider" />
+
+    <View
+        android:id="@+id/view_sensor_01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintTop_toBottomOf="@id/view_provider_02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ic_sensor"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="08dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/ic_sensor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_sensor_01" />
+
+    <TextView
+        android:id="@+id/text_sensor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:inputType="numberDecimal"
+        android:text="Sensor"
+        android:textAlignment="center"
+        android:textColor="@color/ktivobase"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/ic_sensor"
+        app:layout_constraintStart_toEndOf="@+id/ic_sensor"
+        app:layout_constraintTop_toTopOf="@id/ic_sensor" />
+
+    <View
+        android:id="@+id/view_sensro_02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="04dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="08dp"
+        android:background="@color/ktivobase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_sensor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

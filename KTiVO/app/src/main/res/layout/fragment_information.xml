@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.information.InformationFragment">
+
+    <TextView
+        android:id="@+id/text_title_url_dados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="16dp"
+        android:text="Url Dados:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_url_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="6dp"
+        android:text="value url dados"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title_url_dados" />
+
+
+    <TextView
+        android:id="@+id/text_title_url_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="12dp"
+        android:text="Url Fotos:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_url_data" />
+
+    <TextView
+        android:id="@+id/text_url_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="6dp"
+        android:text="value url photos"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title_url_photos" />
+
+    <TextView
+        android:id="@+id/text_title_url_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="12dp"
+        android:text="Url Registros"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_url_photos" />
+
+    <TextView
+        android:id="@+id/text_url_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="6dp"
+        android:text="value url register"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title_url_register" />
+
+    <TextView
+        android:id="@+id/text_title_uuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="12dp"
+        android:text="UUID"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_url_register" />
+
+    <TextView
+        android:id="@+id/text_uuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="6dp"
+        android:text="value uuid"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title_uuid" />
+
+    <TextView
+        android:id="@+id/text_title_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="16dp"
+        android:text="Token"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_uuid" />
+
+    <TextView
+        android:id="@+id/text_token"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="08dp"
+        android:layout_marginTop="6dp"
+        android:text="value token"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title_token" />
+
+    <ImageView
+        android:id="@+id/ic_check"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_warning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_token" />
+
+    <TextView
+        android:id="@+id/text_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="KTiVO está OFF !!!"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/ic_check" />
+
+    <TextView
+        android:id="@+id/text_Version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Versão 1.0.0"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_system" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="95dip"
+        android:minHeight="95dip"
+        android:minWidth="95dip"
+        android:maxWidth="95dip"
+        android:indeterminateDrawable="@drawable/progress_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

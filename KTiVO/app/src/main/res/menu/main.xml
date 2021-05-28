@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="wolppi.javatpoint.com.kotlinoptionsmenu.MainActivity">
+    <item
+        android:id="@+id/action_all_temperature"
+        android:title="Todos">
+    </item>
+    <item
+        android:id="@+id/action_normal_temperature"
+        android:title="@string/normalTemp">
+    </item>
+
+    <item
+        android:id="@+id/action_hot_temperature"
+        android:title="@string/hotTemp">
+    </item>
+
+    <item
+        android:id="@+id/action_cold_temperature"
+        android:title="Frio">
+    </item>
+
+
+</menu>
