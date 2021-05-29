@@ -52,16 +52,16 @@ class MenuRegisterFragment : Fragment(), View.OnClickListener {
             mIntent = Intent (activity, AreaActivity::class.java)
         }
         if (v.id == R.id.text_place || v.id == R.id.ic_place) {
-            mIntent = Intent (activity, AreaFormActivity::class.java)
+ //           mIntent = Intent (activity, PlaceFormActivity::class.java)
         }
         if (v.id == R.id.text_contact || v.id == R.id.ic_contact) {
-            mIntent = Intent (activity, AreaFormActivity::class.java)
+//            mIntent = Intent (activity, Contactsctivity::class.java)
         }
         if (v.id == R.id.text_provider || v.id == R.id.ic_provider) {
-            mIntent = Intent (activity, AreaFormActivity::class.java)
+//            mIntent = Intent (activity, ProviderFormActivity::class.java)
         }
         if (v.id == R.id.text_sensor || v.id == R.id.ic_sensor) {
-            mIntent = Intent (activity, AreaFormActivity::class.java)
+//            mIntent = Intent (activity, SensorFormActivity::class.java)
         }
         activity?.startActivity(mIntent)
     }
